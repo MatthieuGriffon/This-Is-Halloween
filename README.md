@@ -15,20 +15,17 @@ npm or yarn for dependency management
 Setup
 Clone the repository:
 
-bash
-Copier le code
+
+
 git clone https://github.com/your-username/halloween-homepage.git
 cd halloween-homepage
 Install the dependencies:
 
-bash
-Copier le code
 npm install
 Start the development server:
 
-bash
-Copier le code
 npm run dev
+
 This will launch the project in development mode with hot-reloading enabled. You can view the project at http://localhost:3000.
 
 Scripts
@@ -36,8 +33,8 @@ npm run dev: Start the development server with Vite and hot module replacement.
 npm run build: Build the project for production.
 npm run preview: Preview the production build locally.
 Project Structure
-php
-Copier le code
+
+
 halloween-homepage/
 ├── public/             # Static assets
 ├── src/
