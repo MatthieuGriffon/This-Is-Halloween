@@ -1,50 +1,56 @@
-# React + TypeScript + Vite
+Halloween Homepage - React + TypeScript + Three.js
+This project is a Halloween-themed homepage built with React, TypeScript, Vite, and Three.js. The page features a spooky interactive scene for celebrating the Halloween season.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Project Features
+3D Scene with Three.js: The project includes a 3D scene using Three.js, featuring interactive elements and Halloween decorations.
+React & TypeScript: Built with React and TypeScript for a strongly-typed, maintainable codebase.
+Vite: Utilizes Vite for fast development builds and HMR (Hot Module Replacement).
+SWC: Compiles TypeScript with the super-fast SWC compiler.
+Installation
+Follow these steps to get the project running locally:
 
-Currently, two official plugins are available:
+Prerequisites
+Node.js (version 16.x or higher)
+npm or yarn for dependency management
+Setup
+Clone the repository:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+bash
+Copier le code
+git clone https://github.com/your-username/halloween-homepage.git
+cd halloween-homepage
+Install the dependencies:
 
-## Expanding the ESLint configuration
+bash
+Copier le code
+npm install
+Start the development server:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+bash
+Copier le code
+npm run dev
+This will launch the project in development mode with hot-reloading enabled. You can view the project at http://localhost:3000.
 
-- Configure the top-level `parserOptions` property like this:
+Scripts
+npm run dev: Start the development server with Vite and hot module replacement.
+npm run build: Build the project for production.
+npm run preview: Preview the production build locally.
+Project Structure
+php
+Copier le code
+halloween-homepage/
+├── public/             # Static assets
+├── src/
+│   ├── App.tsx         # Main React component
+│   ├── ThreeScene.tsx  # Three.js scene setup
+│   ├── assets/         # Images, fonts, etc.
+│   └── index.tsx       # Entry point for the React app
+├── tsconfig.json       # TypeScript configuration
+├── vite.config.ts      # Vite configuration
+├── package.json        # Project dependencies and scripts
+└── README.md           # Project documentation
+Contributing
+Feel free to open issues or submit pull requests if you have suggestions for improvements or features.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
